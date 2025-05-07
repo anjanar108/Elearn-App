@@ -1,0 +1,62 @@
+
+
+<form method="POST" class="container mt-5">
+    {% csrf_token %}
+    <div class="mb-4">
+        <h3 class="text-primary">Question 1</h3>
+        <div class="form-group mb-3">
+            <label for="question1" class="form-label">Enter Question</label>
+            <input type="text" id="question1" name="question1" class="form-control" placeholder="Enter question">
+        </div>
+        <div class="form-group mb-3">
+            <label for="option1_1" class="form-label">Option 1</label>
+            <input type="text" id="option1_1" name="option1_1" class="form-control" placeholder="Option 1">
+        </div>
+        <div class="form-group mb-3">
+            <label for="option1_2" class="form-label">Option 2</label>
+            <input type="text" id="option1_2" name="option1_2" class="form-control" placeholder="Option 2">
+        </div>
+        <div class="form-group mb-3">
+            <label for="option1_3" class="form-label">Option 3</label>
+            <input type="text" id="option1_3" name="option1_3" class="form-control" placeholder="Option 3">
+        </div>
+        <div class="form-group mb-3">
+            <label for="option1_4" class="form-label">Option 4</label>
+            <input type="text" id="option1_4" name="option1_4" class="form-control" placeholder="Option 4">
+        </div>
+        <div class="form-group mb-3">
+            <label for="correct1" class="form-label">Correct Option (1-4)</label>
+            <input type="number" id="correct1" name="correct1" class="form-control" placeholder="Correct Option (1-4)">
+        </div>
+    </div>
+
+    {% comment %} <div class="mb-4">
+        <h3 class="text-primary">Question 2</h3>
+        <div class="form-group mb-3">
+            <label for="question2" class="form-label">Enter Question</label>
+            <input type="text" id="question2" name="question2" class="form-control" placeholder="Enter question">
+        </div>
+        <div class="form-group mb-3">
+            <label for="option2_1" class="form-label">Option 1</label>
+            <input type="text" id="option2_1" name="option2_1" class="form-control" placeholder="Option 1">
+        </div>
+        <div class="form-group mb-3">
+            <label for="option2_2" class="form-label">Option 2</label>
+            <input type="text" id="option2_2" name="option2_2" class="form-control" placeholder="Option 2">
+        </div>
+        <div class="form-group mb-3">
+            <label for="option2_3" class="form-label">Option 3</label>
+            <input type="text" id="option2_3" name="option2_3" class="form-control" placeholder="Option 3">
+        </div>
+        <div class="form-group mb-3">
+            <label for="option2_4" class="form-label">Option 4</label>
+            <input type="text" id="option2_4" name="option2_4" class="form-control" placeholder="Option 4">
+        </div>
+        <div class="form-group mb-3">
+            <label for="correct2" class="form-label">Correct Option (1-4)</label>
+            <input type="number" id="correct2" name="correct2" class="form-control" placeholder="Correct Option (1-4)">
+        </div>
+    </div><br> {% endcomment %}
+    <button type="submit" class="btn btn-success">Save Questions</button>
+    {% comment %} <a href="{% url 'publish_exam' %}" class="btn btn-primary">Publish Exam</a> {% endcomment %}
+</form>
