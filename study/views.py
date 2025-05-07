@@ -13,7 +13,7 @@ def home(request):
     event=Event.objects.all()
     return render(request, 'index.html', {'course': course, 'staff': staff,'event':event})
 
-
+# hello
 
 def about(request):
     staff=Staff.objects.all()
