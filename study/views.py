@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect,get_object_or_404
 from study.models import Student,Staff, Course,Event,Message,Question,StudentAnswer
-# from django.contrib import messages
+from django.contrib import messages
 from django.contrib.sessions.models import Session
 from django.contrib.auth.hashers import make_password , check_password
 from django.contrib.auth import logout
